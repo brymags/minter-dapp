@@ -7,24 +7,168 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "Zodiac Gems (Feminine)";
+const description = "NFT collection of 9,999 generative art of women that epitomize the 12 zodiac signs";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 833,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Background Aquarius" },
+      { name: "Base" },
+      { name: "Zodiac Sign Aquarius" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
     ],
   },
+  {
+    growEditionSizeTo: 1669,
+    layersOrder: [
+      { name: "Background Aries" },
+      { name: "Base" },
+      { name: "Zodiac Sign Aries" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 2502,
+    layersOrder: [
+      { name: "Background Cancer" },
+      { name: "Base" },
+      { name: "Zodiac Sign Cancer" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 3335,
+    layersOrder: [
+      { name: "Background Capricorn" },
+      { name: "Base" },
+      { name: "Zodiac Sign Capricorn" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 4168,
+    layersOrder: [
+      { name: "Background Gemini" },
+      { name: "Base" },
+      { name: "Zodiac Sign Gemini" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 5001,
+    layersOrder: [
+      { name: "Background Leo" },
+      { name: "Base" },
+      { name: "Zodiac Sign Leo" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 5834,
+    layersOrder: [
+      { name: "Background Libra" },
+      { name: "Base" },
+      { name: "Zodiac Sign Libra" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 6667,
+    layersOrder: [
+      { name: "Background Pisces" },
+      { name: "Base" },
+      { name: "Zodiac Sign Pisces" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 7500,
+    layersOrder: [
+      { name: "Background Sagittarius" },
+      { name: "Base" },
+      { name: "Zodiac Sign Sagittarius" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 8333,
+    layersOrder: [
+      { name: "Background Scorpio" },
+      { name: "Base" },
+      { name: "Zodiac Sign Scorpio" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 9166,
+    layersOrder: [
+      { name: "Background Taurus" },
+      { name: "Base" },
+      { name: "Zodiac Sign Taurus" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },
+  {
+    growEditionSizeTo: 9999,
+    layersOrder: [
+      { name: "Background Virgo" },
+      { name: "Base" },
+      { name: "Zodiac Sign Virgo" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Dress" },
+      { name: "Hair" },
+      { name: "Accessories" },
+    ],
+  },  
 ];
 
 const shuffleLayerConfigurations = true;
@@ -32,39 +176,39 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+// external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
 
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 2; // Your API key rate limit
+const LIMIT = 10; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const CONTRACT_NAME = 'Zodiac Gems (Feminine)';
+const CONTRACT_SYMBOL = 'ZGF';
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
+const OWNER_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
+const TREASURY_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
+const MAX_SUPPLY = 9999; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 0.009; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 12; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-22T09:00:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
@@ -75,8 +219,8 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "Which Zodiac Gem will you get?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeibzy6h35a6cfbzdbjiv5qzit2puswk4ufmvzcwtk552z5of6vnpva"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
