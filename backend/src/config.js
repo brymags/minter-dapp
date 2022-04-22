@@ -195,7 +195,7 @@ const CHAIN = 'rinkeby'; // only rinkeby or polygon
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Zodiac Gems (Feminine)';
 const CONTRACT_SYMBOL = 'ZGF';
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
 const TREASURY_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
 const MAX_SUPPLY = 9999; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
@@ -203,7 +203,7 @@ const MINT_PRICE = 0.009; // Minting price per NFT. Rinkeby = ETH, Polygon = MAT
 const TOKENS_PER_MINT = 12; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-22T09:00:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-23T09:00:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
