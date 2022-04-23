@@ -1,5 +1,5 @@
-const contractAddress = "0x0cECAfDc4648c17fa9e9BA4A824eB3822d0Ef355"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0x90751E25f30Cc39a3BD31b4715A883cE336a7860"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Zodiac Gems (Feminine) NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
