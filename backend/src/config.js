@@ -209,7 +209,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-22T09:00:00+00:00"; // This is required.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7"; // Address that will receive the royalty
-const BASE_URI = null; // only update if you want to manually set the base uri
+const BASE_URI = 'ipfs://bafybeiazt7p74piozw2j33a6qwgyvacp5jgejbujvnw5dkgkcphyarccy4/'; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
@@ -217,7 +217,7 @@ const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "Which Zodiac Gem will you get?"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeibzy6h35a6cfbzdbjiv5qzit2puswk4ufmvzcwtk552z5of6vnpva"; // Replace with your generic image that will display for all NFTs pre-reveal.
