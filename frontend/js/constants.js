@@ -1,4 +1,4 @@
-const contractAddress = "0xDbda38dF47911f69489Ae154e3EE46b57d3a1a96"; //Replace with your own contract address
+const contractAddress = "0x0cECAfDc4648c17fa9e9BA4A824eB3822d0Ef355"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Zodiac Gems (Feminine) NFT Project!!";
