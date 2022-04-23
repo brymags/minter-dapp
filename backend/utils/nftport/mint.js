@@ -22,8 +22,8 @@ const {
 const _limit = RateLimit(1); // Currently, minting is limited to 1/second.
 
 const ipfsMetasFile = GENERIC
-  ? `${basePath}/build/ipfsMetasGeneric/_ipfsMetas.json`
-  : `${basePath}/build/ipfsMetas/_ipfsMetas.json`;
+  ? `${basePath}/build/ipfsMetasGeneric/_ipfsMetasResponse.json`
+  : `${basePath}/build/ipfsMetas/_ipfsMetasResponse.json`;
 
 async function main() {
   const ok = await yesno({
