@@ -3,7 +3,8 @@ const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Zodiac Gems (Feminine) NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'Zodiac Gems (Feminine) NFT Project is a collection of 9,999 generative art of women that epitomize the 12 zodiac signs.';
+const welcome_p = 'Zodiac Gems (Feminine) is a collection of 9,999 generative art of women that epitomize the 12 zodiac signs. This is not your usual NFT collection in Open Sea. We are aiming to bring empowerment in faith, spirituality and mental health awareness thru NFTs. We are encouraging all of you to join this movement for we believe that we need to have faith especially in this challenging time of our generation.
+';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
@@ -13,7 +14,7 @@ const p_presale_coming_soon = "We are working hard to launch the NFT Collection.
 const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale.. 😢";
 const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you! 🎉";
-const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
+const p_public_mint = "No whitelist needed. Public minting is now open! 💎";
 const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "Mint Your Special NFT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
