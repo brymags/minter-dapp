@@ -195,7 +195,6 @@ const CHAIN = 'polygon'; // only rinkeby or polygon
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Zodiac Gems (Feminine)';
 const CONTRACT_SYMBOL = 'ZGF';
-const MINT_TO_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
 const TREASURY_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
