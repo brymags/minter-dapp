@@ -7,8 +7,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Zodiac Gems (Feminine)";
-const description = "NFT collection of 9,999 generative art of women that epitomize the 12 zodiac signs";
+const namePrefix = "Celestial Zodiac Feminine";
+const description = "Celestial Zodiac Feminine NFT collection of 9,999 generative art of women that epitomize the 12 zodiac signs";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
