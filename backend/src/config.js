@@ -190,14 +190,14 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 10; // Your API key rate limit
-const CHAIN = 'polygon'; // only rinkeby or polygon
+const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Zodiac Gems (Feminine)';
-const CONTRACT_SYMBOL = 'ZGF';
+const CONTRACT_NAME = 'Celestial Zodiac Feminine';
+const CONTRACT_SYMBOL = 'CZF';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
-const TREASURY_ADDRESS = '0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7';
+const OWNER_ADDRESS = '0x251aC4a8ca674388b31d9a7570021c4cfa4E4D41';
+const TREASURY_ADDRESS = '0x251aC4a8ca674388b31d9a7570021c4cfa4E4D41';
 const MAX_SUPPLY = 9999; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 18; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 33; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
@@ -208,7 +208,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-23T09:00:00+00:00"; // This is required.
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x2Cfd2d7B39752bcFBC6Aa1b1DD01ccf33a0093B7"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x251aC4a8ca674388b31d9a7570021c4cfa4E4D41"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
