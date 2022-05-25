@@ -163,7 +163,7 @@ async function loadInfo() {
   const mintContainer = document.getElementById("mintContainer");
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
-
+  window.alert("i'm here"); //cmd
   let startTime = "";
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
