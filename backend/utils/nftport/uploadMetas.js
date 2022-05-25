@@ -1,3 +1,4 @@
+   
 const FormData = require("form-data");
 const path = require("path");
 const basePath = process.cwd();
@@ -76,7 +77,7 @@ async function main() {
       "external_url": metaData?.external_url,
       "custom_fields": {
         "date": metaData.date,
-        "compiler": "HashLips Art Engine - codeSTACKr Modified"
+        "compiler": "Celestial Zodiac Feminine"
       }
     }
 
