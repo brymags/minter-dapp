@@ -332,6 +332,14 @@ section {
   width: 100%;
 }
 
+/* CMD TRY 
+.splideright {
+  position: absolute;
+  top: 90px;
+  right: 5rem;
+  z-index: -1;
+}
+
 /* SPINNER */
 .dot-spin {
   position: absolute;
