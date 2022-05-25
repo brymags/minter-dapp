@@ -60,8 +60,7 @@ const updateConnectStatus = async () => {
       // HIDE SPINNER
       spinner.classList.add('hidden');
       notConnected.classList.remove('hidden');
-      notConnected.classList.add('show-not-connected');
-      loadInfo();
+      notConnected.classList.remove('show-not-connected');      
     };
     window.alert("i'm here1"); //cmd  
     spinner.classList.add('hidden');   
