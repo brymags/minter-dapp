@@ -333,10 +333,10 @@ section {
 }
 
 /* CMD TRY */
-.splideright {
-  position: absolute;
+.rightsplide {
+  position: right;
   top: 90px;
-  right: 5rem;
+  left: 95rem;
   z-index: -1;
 }
 

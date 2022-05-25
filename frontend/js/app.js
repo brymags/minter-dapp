@@ -37,6 +37,19 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
   splide.mount();
 
+  const rightsplide = new Splide(".splide", {
+    type: "loop",
+    arrows: false,
+    perMove: 3,
+    pagination: false,
+    autoplay: true,
+    direction: 'ttb',
+    height: "calc(100vh - 90px)",
+    width: '30vw',
+    autoHeight: true,
+  });
+  rightsplide.mount();
+
   updateConnectStatus();
   if (MetaMaskOnboarding.isMetaMaskInstalled()) {
     window.ethereum.on("accountsChanged", (newAccounts) => {
