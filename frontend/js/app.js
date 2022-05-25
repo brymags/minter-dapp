@@ -61,10 +61,10 @@ const updateConnectStatus = async () => {
       spinner.classList.add('hidden');
       notConnected.classList.remove('hidden');
       notConnected.classList.add('show-not-connected');
+      loadInfo();
     };
     window.alert("i'm here1"); //cmd  
-    spinner.classList.add('hidden');
-    loadInfo();
+    spinner.classList.add('hidden');   
   } else if (accounts && accounts.length > 0) {
     onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
     window.address = accounts[0];
@@ -75,8 +75,7 @@ const updateConnectStatus = async () => {
     // SHOW SPINNER
     spinner.classList.remove('hidden');
     window.contract = new web3.eth.Contract(abi, contractAddress);
-    loadInfo();
-    window.alert("i'm here2"); //cmd  
+    loadInfo();    
   } else {
     onboardButton.innerText = "Connect MetaMask!";
     // HIDE SPINNER
@@ -100,8 +99,7 @@ const updateConnectStatus = async () => {
           window.contract = new web3.eth.Contract(abi, contractAddress);
           loadInfo();
         });
-    };
-    window.alert("i'm here3"); //cmd  
+    };    
   }
 };
 
