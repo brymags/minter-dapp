@@ -64,6 +64,7 @@ const updateConnectStatus = async () => {
     };
     window.alert("i'm here1"); //cmd  
     spinner.classList.add('hidden');
+    loadInfo();
   } else if (accounts && accounts.length > 0) {
     onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
     window.address = accounts[0];
