@@ -1,9 +1,9 @@
-const contractAddress = "0xc98C268e7F7A910934964cFf0c4Be30014139764"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0x90751E25f30Cc39a3BD31b4715A883cE336a7860"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "Celestial Zodiac Feminine NFT Project!!";
-const welcome_h2 = "Please connect to MetaMask to Get Started";
-const welcome_p = 'Celestial Zodiac Feminine is a collection of 9,999 generative art of women that epitomize the 12 zodiac signs.';
+const welcome_h1 = "Zodiac Gems (Feminine) NFT Project!!";
+const welcome_h2 = "Connect to MetaMask to Get Started";
+const welcome_p = 'Zodiac Gems (Feminine) is a collection of 9,999 generative art of women that epitomize the 12 zodiac signs.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
