@@ -37,6 +37,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
   splide.mount();
 
+  //cmd
   const rightsplide = new Splide(".splide", {
     type: "loop",
     arrows: false,
