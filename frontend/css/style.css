@@ -334,10 +334,8 @@ section {
 
 /* CMD TRY */
 .rightsplide {
-  position: right;
-  top: 90px;
-  left: 95rem;
-  z-index: -1;
+  position: absolute;  
+  right: 0;
 }
 
 /* SPINNER */
