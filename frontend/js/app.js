@@ -164,6 +164,7 @@ async function loadInfo() {
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
   window.alert("i'm here"); //cmd
+  spinner.classList.add('hidden');//cmd
   let startTime = "";
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
