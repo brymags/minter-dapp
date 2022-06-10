@@ -82,12 +82,14 @@ header .container {
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
+  background: white;
 }
 
 .not-connected p {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
+  background: red;
 }
 
 .not-connected a {
@@ -95,6 +97,7 @@ header .container {
   color: var(--accent-color);
   font-size: 1.5rem;
   font-weight: bold;
+  background: blue;
 }
 
 /* BUTTONS */
