@@ -8,11 +8,11 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
-  --bg-color: #8d0692;
+  --bg-color: #9e88b6;
   --bg-color-transparent: #77057180;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #000000;
+  --accent-color: #7268a4;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -45,7 +45,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--bg-color);
+  background-color:#dac1c5;
   box-shadow: var(--header-shadow);
 }
 
@@ -318,14 +318,15 @@ section {
 
 .splide {
   position: absolute;
-  top: 90px;
-  left: 5rem;
+  top: 110px;
+  /* left: 5rem; */
+  left: 85rem;
   z-index: -1;
 }
 
 .splide__slide {
   border: var(--accent-color) solid;
-  border-width: 5px 10px;
+  border-width: 2px 3px;
 }
 
 .splide__slide img {
@@ -345,6 +346,10 @@ section {
   left: 50%;
   transform: translate(-50%, -50%) scale(3);
 }
+
+
+/*CMD*/
+
 
 /* MEDIA QUERIES */
 
