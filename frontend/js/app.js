@@ -65,6 +65,8 @@ const updateConnectStatus = async () => {
   const onboardButton = document.getElementById("connectWallet");
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
+  const homeTEXT = document.getElementById('homecontentTEXT'); //cmd
+  const homeBOX = document.getElementById('homecontentBOX'); //cmd
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
     onboardButton.innerText = "Please Install/Setup MetaMask first";
     onboardButton.onclick = () => {
@@ -87,8 +89,10 @@ const updateConnectStatus = async () => {
     notConnected.classList.add('hidden');
     // SHOW SPINNER
     spinner.classList.remove('hidden');
+    homeTEXT.style.display = 'none';
+    homeBOX.style.display = 'none';   
     window.contract = new web3.eth.Contract(abi, contractAddress);
-    loadInfo();    
+    loadInfo();        
   } else {
     onboardButton.innerText = "Connect MetaMask!";
     // HIDE SPINNER
@@ -113,7 +117,9 @@ const updateConnectStatus = async () => {
           loadInfo();
         });
     };
-    window.alert("i'm here3"); //cmd      
+    window.alert("i'm here3"); //cmd   
+    homeTEXT.style.display = 'none';
+    homeBOX.style.display = 'none';   
   }
 };
 
@@ -340,7 +346,7 @@ async function mint() {
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
         }
-        console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
+        console.log("Minted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
