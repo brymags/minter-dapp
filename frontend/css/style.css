@@ -32,8 +32,7 @@ body {
   font-family: var(--font-primary);
 }
 
-.container {
-  padding-top: 200px;
+.container {  
   display: flex;
   flex-direction: column;
   max-width: 960px;
