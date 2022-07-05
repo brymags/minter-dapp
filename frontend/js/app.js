@@ -116,8 +116,7 @@ const updateConnectStatus = async () => {
           window.contract = new web3.eth.Contract(abi, contractAddress);
           loadInfo();
         });
-    };
-    window.alert("i'm here3"); //cmd   
+    };     
     homeTEXT.style.display = 'none';
     homeBOX.style.display = 'none';   
   }
