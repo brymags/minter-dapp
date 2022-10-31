@@ -169,6 +169,7 @@ async function checkChain() {
           updateConnectStatus();
         } catch (err) {
           console.log(err);
+          window.alert(err);
         }
       }
     }
