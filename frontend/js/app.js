@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 });
-
+window.alert("im here TEST");
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
   const onboardButton = document.getElementById("connectWallet");
