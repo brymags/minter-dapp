@@ -146,6 +146,7 @@ async function checkChain() {
 
         try {
           if(chain === 'rinkeby') {
+            window.alert("rinkeby");
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
               params: [
@@ -157,6 +158,7 @@ async function checkChain() {
                 },
               ],
             });
+            window.alert("rinkeby1");
           } else if(chain === 'polygon') {
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
@@ -181,6 +183,7 @@ async function checkChain() {
 }
 
 async function loadInfo() {
+  window.alert("loadnow");
   window.info = await window.contract.methods.getInfo().call();
   const publicMintActive = await contract.methods.mintingActive().call();
   const presaleMintActive = await contract.methods.presaleActive().call();
