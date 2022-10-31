@@ -80,6 +80,7 @@ const updateConnectStatus = async () => {
     };    
     onboarding.stopOnboarding();
     spinner.classList.add('hidden');   
+    window.alert("im here1");
   } else if (accounts && accounts.length > 0) {
     onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
     window.address = accounts[0];
@@ -88,6 +89,7 @@ const updateConnectStatus = async () => {
     notConnected.classList.remove('show-not-connected');
     notConnected.classList.add('hidden');
     // SHOW SPINNER
+    window.alert("im here2");
     spinner.classList.remove('hidden');
     homeTEXT.style.display = 'none';
     homeBOX.style.display = 'none';   
@@ -119,6 +121,7 @@ const updateConnectStatus = async () => {
     };     
     homeTEXT.style.display = 'none';
     homeBOX.style.display = 'none';   
+    window.alert("im here3");
   }
 };
 
@@ -140,6 +143,7 @@ async function checkChain() {
       window.alert(err);
         // This error code indicates that the chain has not been added to MetaMask.
       if (err.code === 4902) {
+
         try {
           if(chain === 'rinkeby') {
             await window.ethereum.request({
