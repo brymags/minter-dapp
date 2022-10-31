@@ -137,6 +137,7 @@ async function checkChain() {
       });
       updateConnectStatus();
     } catch (err) {
+      window.alert(err);
         // This error code indicates that the chain has not been added to MetaMask.
       if (err.code === 4902) {
         try {
