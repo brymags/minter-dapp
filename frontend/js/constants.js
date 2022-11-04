@@ -1,5 +1,5 @@
 const contractAddress = "0xc98C268e7F7A910934964cFf0c4Be30014139764"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const chain = 'sepolia'; // rinkeby or polygon or sepolia
 
 const welcome_h1 = "Celestial Zodiac Feminine NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";

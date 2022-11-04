@@ -132,6 +132,9 @@ async function checkChain() {
   } else if(chain === 'polygon') {
     chainId = 137;
   }
+  else if(chain === 'sepolia') {
+    chainId = 11155111;
+  }
   if (window.ethereum.networkVersion !== chainId) {
     try {
       await window.ethereum.request({
@@ -145,8 +148,7 @@ async function checkChain() {
       if (err.code === 4902) {
 
         try {
-          if(chain === 'rinkeby') {
-            window.alert("rinkeby");
+          if(chain === 'rinkeby') {            
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
               params: [
@@ -157,8 +159,7 @@ async function checkChain() {
                   rpcUrls: ['https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161'],
                 },
               ],
-            });
-            window.alert("rinkeby1");
+            });            
           } else if(chain === 'polygon') {
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
@@ -172,6 +173,21 @@ async function checkChain() {
               ],
             });
           }
+
+          else if(chain === 'sepolia') {
+            await window.ethereum.request({
+              method: 'wallet_addEthereumChain',
+              params: [
+                {
+                  chainName: 'Sepolia Test Network',
+                  chainId: web3.utils.toHex(chainId),
+                  nativeCurrency: { name: 'Sepolia', decimals: 18, symbol: 'SEP' },
+                  rpcUrls: ['https://sepolia.infura.io/v3/'],
+                },
+              ],
+            });
+          }
+
           updateConnectStatus();
         } catch (err) {
           console.log(err);
@@ -256,6 +272,9 @@ async function loadInfo() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
+  else if (chain === 'sepolia') {
+    priceType = 'ETH';
+  }
   const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
@@ -321,6 +340,9 @@ function setTotalPrice() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
+  else if (chain === 'sepolia') {
+    priceType = 'ETH';
+  }
   const price = web3.utils.fromWei(totalPriceWei.toString(), 'ether');
   totalPrice.innerText = `${price} ${priceType}`;
   mintButton.disabled = false;
@@ -347,6 +369,15 @@ async function mint() {
       if(mintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}`;
+          const mintedContainer = document.querySelector('.minted-container');
+          const countdownContainer = document.querySelector('.countdown');
+          const mintedTxnBtn = document.getElementById("mintedTxnBtn");
+          mintedTxnBtn.href = url;
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
+        }
+        else if(chain === 'sepolia') {
+          const url = `https://sepolia.etherscan.io/tx/${mintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
@@ -384,6 +415,15 @@ async function mint() {
       if(presaleMintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
+          const mintedContainer = document.querySelector('.minted-container');
+          const countdownContainer = document.querySelector('.countdown');
+          const mintedTxnBtn = document.getElementById("mintedTxnBtn");
+          mintedTxnBtn.href = url;
+          countdownContainer.classList.add('hidden');
+          mintedContainer.classList.remove('hidden');
+        }
+        else if(chain === 'sepolia') {
+          const url = `https://sepolia.etherscan.io/tx/${mintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
